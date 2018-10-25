@@ -14,3 +14,12 @@
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('tentang', function () {
+    return view('about');
+});
+Route::get('pesan', function () {
+    return view('pesan');
+});
+Route::post('pesan/kirim', function () {
+    return view('pesan-kirim');
+});
